@@ -91,6 +91,7 @@ def main():
         "bash": "alias {}='{}'",
         "zsh": "alias {}='{}'",
         "fish": "abbr --add {} \"{}\"",
+        "nushell": "export alias {} = {}",
     }
 
     shell = sys.argv[1] if len(sys.argv) > 1 else "bash"

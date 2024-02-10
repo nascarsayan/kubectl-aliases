@@ -39,9 +39,10 @@ See [the full list](.kubectl_aliases).
 
 ### Installation
 
-You can directly download the [`.kubectl_aliases` file](https://raw.githubusercontent.com/ahmetb/kubectl-aliases/master/.kubectl_aliases)
-for bash/zsh or the [`.kubectl_aliases.fish` file](https://raw.githubusercontent.com/ahmetb/kubectl-aliases/master/.kubectl_aliases.fish)
-for fish and save it to your `$HOME` directory.
+You can directly download the [`.kubectl_aliases` file](https://raw.githubusercontent.com/ahmetb/kubectl-aliases/master/.kubectl_aliases) for bash/zsh
+or the [`.kubectl_aliases.fish` file](https://raw.githubusercontent.com/ahmetb/kubectl-aliases/master/.kubectl_aliases.fish) for fish
+or the [`.kubectl_aliases.nu` file](https://raw.githubusercontent.com/ahmetb/kubectl-aliases/master/.kubectl_aliases.nu) for Nushell
+and save it to your `$HOME` directory.
 
 #### Bash/Zsh
 
@@ -80,6 +81,14 @@ instead of aliases, so that pressing space shows the full command before executi
 >
 >     test -f ~/.kubectl_aliases.fish && source \
 >          (cat ~/.kubectl_aliases.fish | sed -r 's/(kubectl.*) --watch/watch \1/g' | psub)
+
+#### Nushell
+
+Add the following to your `~/.config/nushell/config.nu` file:
+
+```nushell
+source ~/.kubectl_aliases.nu
+```
 
 ### Syntax explanation
 
